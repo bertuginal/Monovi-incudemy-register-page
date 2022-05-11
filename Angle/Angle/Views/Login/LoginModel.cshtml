@@ -1,0 +1,52 @@
+﻿@using Angle.Models
+@model Angle.Models.LoginModel
+@{
+    ViewData["Title"] = "LoginModel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Login</h1>
+
+<hr />
+
+<div style="position:relative; left:400px; top:2px;" class="row">
+    <div class="col-md-4">
+        <style>
+            input.setCheckBox {
+                width: 15px;
+                height: 15px;
+            }
+        </style>
+        <form asp-action="LoginModel" asp-controller="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <div>Email</div>
+                <input name="email" type="email" placeholder="Your Email" asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div>Password</div>
+                <input name="password" type="password" placeholder="Your Password" asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div>Remember Me :</div>
+            <input id="CheckMe" type="checkbox" class="setCheckBox" />
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

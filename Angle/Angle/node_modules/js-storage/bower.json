@@ -1,0 +1,36 @@
+{
+  "name": "js-storage",
+  "version": "1.0.4",
+  "main": "js.storage.js",
+  "description": "Plugin that simplify access to storages (HTML5) & cookies, add namespace storage and provide compatiblity for old browsers",
+  "keywords": [
+    "storage",
+    "html5",
+    "localStorage",
+    "sessionStorage",
+    "cookie",
+    "namespace"
+  ],
+  "author": {
+    "name": "Julien Maurel",
+    "url": "https://github.com/julien-maurel"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "homepage": "https://github.com/julien-maurel/js-storage",
+  "bugs": "https://github.com/julien-maurel/js-storage/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/julien-maurel/js-storage.git"
+  },
+  "ignore": [
+    "Jasmine",
+    "gulp.js",
+    "/*.txt",
+    "/*.json"
+  ]
+}

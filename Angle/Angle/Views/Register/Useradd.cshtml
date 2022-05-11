@@ -1,0 +1,263 @@
+﻿@model Angle.Models.RegisterModel;
+
+@{
+    ViewData["Title"] = "Useradd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Sign Up</h1>
+
+<h4>Please fill in your information completely!</h4>
+<hr />
+
+<div style="position:relative; left:400px; top:2px;" class="row">
+    <div class="col-md-4">
+        <style>
+            input.setCheckBox {
+                width: 15px;
+                height: 15px;
+            }
+        </style>
+        <form asp-action="Useradd" asp-controller="Register" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <div>Name*</div>
+                <input name="Name" type="text" placeholder="Your Name" asp-for="Usermodel.Name" class="form-control" required />
+                <span asp-validation-for="Usermodel.Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div>Surname*</div>
+                <input name="Surname" type="text" placeholder="Your Surame" asp-for="Usermodel.Surname" class="form-control" required />
+                <span asp-validation-for="Usermodel.Surname" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div>Gender*</div>
+                <div class="control" name="GenderId" required>
+                    <label class="radio">
+                        <input type="radio" name="GenderId" id="man"> Man &emsp;
+                        <input type="radio" name="GenderId" id="woman"> Woman
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div>E-mail*</div>
+                <input name="Email" type="email" placeholder="Your E-mail" asp-for="Usermodel.Email" class="form-control" required />
+                <span asp-validation-for="Usermodel.Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+
+                <label>Area Code*</label>
+                <br />
+                <select id="areacode" name="AreaCodeId" required>
+                    @foreach (var item in Model.AreaCodes)
+                    {
+                        <option value="@item.AreaCodeId">
+                            @item.AreaCodeName
+                        </option>
+                    }
+                </select>
+
+                <input name="Phone" type="text" placeholder="Your Phone Number" asp-for="Usermodel.Phone" maxlength="10" size="40" required />
+                <span asp-validation-for="Usermodel.Phone" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div>What Are You Registering As?*</div>
+
+                <div class="control" required>
+                    <label class="radio">
+                        <input type="radio" id="1" name="role" onclick="myFunction()"> Instructor &emsp;
+                        <script>
+                            function myFunction() {
+                                document.getElementById("instructorcompany").disabled = false;
+                                document.getElementById("instructortitlecompany").disabled = false;
+                                document.getElementById("studentyes").disabled = true;
+                                document.getElementById("studentno").disabled = true;
+                                document.getElementById("studentcompany").disabled = true;
+                                document.getElementById("studenttitlecompany").disabled = true;
+
+                            }
+                        </script>
+                        <input type="radio" id="0" name="role" onclick="myfunction()"> Student
+                        <script>
+                            function myfunction() {
+                                document.getElementById("instructorcompany").disabled = true;
+                                document.getElementById("instructortitlecompany").disabled = true;
+                                document.getElementById("studentyes").disabled = false;
+                                document.getElementById("studentno").disabled = false;
+                                document.getElementById("studentcompany").disabled = false;
+                                document.getElementById("studenttitlecompany").disabled = false;
+                            }
+                        </script>
+                    </label>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div>Company (If Instructor)</div>
+                <input name="companyname" type="text" placeholder="Company Name" asp-for="Usermodel.Instructor" class="form-control" id="instructorcompany" onclick="myFunction()" />
+                <span asp-validation-for="Usermodel.Instructor" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div>Upload company logo to add company to our Partners list (8 mb max and JPEG or PNG only)(If Instructor)</div>
+
+                <label for="myfile" class="col-md-2 col-form-label"></label>
+                <div class="col-md-4">
+                    <input id="myfile" type="file" name="UploadLogo" asp-for="Usermodel.UploadLogo" accept="application/vnd.ms-excel,application/pdf" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div>Title Of Your Company (If Instructor)</div>
+                <input name="titlecompanyname" type="text" placeholder="Title Of Your Company" asp-for="Usermodel.Instructor" class="form-control" id="instructortitlecompany" />
+                <span asp-validation-for="Usermodel.Instructor" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div>Do you work? (If Student)</div>
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="foobar" onclick="Function()" id="studentyes"> Yes &emsp;
+                        <script>
+                            function Function() {
+                                document.getElementById("studentcompany").disabled = false;
+                                document.getElementById("studenttitlecompany").disabled = false;
+                            }
+                        </script>
+                        <input type="radio" name="foobar" onclick="ffunction()" id="studentno"> No
+                        <script>
+                            function ffunction() {
+                                document.getElementById("studentcompany").disabled = true;
+                                document.getElementById("studenttitlecompany").disabled = true;
+                            }
+                        </script>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div>Company (If Yes)*</div>
+                <input name="name" type="text" placeholder="Company Name" asp-for="Usermodel.Student" class="form-control" id="studentcompany" />
+                <span asp-validation-for="Usermodel.Student" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div>Title Of Your Company (If Yes)*</div>
+                <input name="name" type="text" placeholder="Title Of Your Company" asp-for="Usermodel.Student" class="form-control" id="studenttitlecompany" />
+                <span asp-validation-for="Usermodel.Student" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>University*</label>
+                <select id="university" class="form-control" name="UniversityId">
+                    @foreach (var item in Model.Universities)
+                    {
+                        <option value="@item.UniversityId">
+                            @item.UniversityName
+                        </option>
+                    }
+                </select>
+            </div>
+
+            <br />
+
+            <div class="form-group" required>
+                <label>Departmant*</label>
+                <select id="university" class="form-control" name="DepartmantId">
+                    @foreach (var item in Model.Departmants)
+                    {
+                        <option value="@item.DepartmantId">
+                            @item.DepartmantName
+                        </option>
+                    }
+                </select>
+            </div>
+
+            <br />
+
+            <div class="form-group" required>
+                <label>Class*</label>
+                <select id="university" class="form-control" name="ClassId">
+                    @foreach (var item in Model.Classes)
+                    {
+                        <option value="@item.ClassId">
+                            @item.ClassName
+                        </option>
+                    }
+                </select>
+            </div>
+
+            <br />
+
+            <div class="password-match" data-msg="Passwords doesn't match">
+                <div class="form-group">
+                    <div>Password* (8 characters minimum)</div>
+                    <input name="Password" type="password" placeholder="New Password" asp-for="Usermodel.Password" class="form-control" id="Password" minlength="8" required />
+                    <span asp-validation-for="Usermodel.Password" class="text-danger"></span>
+
+                </div>
+
+                <div class="form-group" required>
+                    <div>Confirm your password*</div>
+                    <input name="ConfirmPassword" type="password" placeholder="Again New Password" asp-for="Usermodel.ConfirmPassword" class="form-control" id="ConfirmPassword" minlength="8" required />
+                    <span asp-validation-for="Usermodel.ConfirmPassword" class="text-danger"></span>
+                </div>
+
+                <font color="Red">@TempData["notice"]</font>
+                <br />
+
+                <input type="checkbox" onclick="myFuunction()"> Show Password
+                <script>
+                    function myFuunction() {
+                        var x = document.getElementById("Password");
+                        var y = document.getElementById("ConfirmPassword");
+                        if (x.type === "password" && y.type === "password") {
+                            x.type = "text";
+                            y.type = "text";
+                        } else {
+                            x.type = "password";
+                            y.type = "password";
+                        }
+                    }
+                </script>
+            </div>
+
+            <br />
+
+            <div class="form-group">
+                <div>Upload CV(10 mb max and PDF only)</div>
+
+                <label for="myfile" class="col-md-2 col-form-label"></label>
+                <div class="col-md-4">
+                    <input id="myfile" type="file" name="UploadCV" asp-for="Usermodel.UploadCV" accept="application/vnd.ms-excel,application/pdf" />
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+                <input asp-for="Usermodel.PDPL" style="position: relative;" class="setCheckBox" /> I read an accept <a asp-action="Index">PDPL</a>*
+                <span asp-validation-for="Usermodel.PDPL" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+

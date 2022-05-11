@@ -1,0 +1,14 @@
+1.0.4
+ Fix syntax issue
+
+1.0.3
+ Fix issue when native storage is not available neither js-cookies
+
+1.0.2
+ Fix isEmpty with false boolean
+
+1.0.1
+ Fix package/bower.json
+
+1.0.0
+ Initial version created from jQuery-Storage-API#1.9.3
