@@ -2,6 +2,8 @@
 ## Incudemy Training Site Front-End and Back-End Software Development
 It is the user registration page of a training site that I started and developed during my internship at Monovi Information Technologies.
 I stored user information using MSSQL and MySQL technologies and I pulled information such as university, department, class from the database.
+I created the interface of the user registration page using Asp.Net MVC and C# technology, HTML, CSS, JAVASCRİPT information.
+
 This training site will include;
 * You can register on this site as an Instructor or a student (Incudemist), receive training or give training.
 * Users registered as Instructors (Teachers) will be able to open tutorials, create surveys, take quizzes and issue certificates to incudemists.
@@ -9,15 +11,26 @@ This training site will include;
 
 ---
 
-## Register Page
+## :file_folder: Register Page
 You can reach the user registration page I made by clicking [here](http://incudemy.monovi.com.tr/Auth/UserAdd)
 
----
+## :warning: Technologies used
 
-## Installation
+- [Asp.Net Core MVC](https://dotnet.microsoft.com/en-us/apps/aspnet)
+- [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
+- [MySQL](https://www.mysql.com)
+
+## 🚀 Installation
 
 You can download this project and open the sln file.
 
 ```bash
 git clone https://github.com/bertuginal/Incudemy-project
 ```
+
+## :point_down: Images
+
+<div align="center"><img src="https://github.com/bertuginal/Face-Mask-Detection/blob/09241e369c708898dd197a3ede1c9592183ca614/img/withmask.jpg" width="700"></div>
+
+## :clap: And it's done!
+For questions or comments, you can contact me via this e-mail :email: bertuginal@yahoo.com
