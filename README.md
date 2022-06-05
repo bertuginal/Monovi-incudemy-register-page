@@ -30,9 +30,9 @@ git clone https://github.com/bertuginal/Incudemy-project
 
 ## :point_down: Images
 
-<div align="center"><img src="img/Register-Page1.png" width="700"></div>
-<div align="center"><img src="img/Register-Page2.png" width="700"></div>
-<div align="center"><img src="img/Register-Page3.png" width="700"></div>
+<div align="center"><img src="img/Register-Page1.png" width="1000"></div>
+<div align="center"><img src="img/Register-Page2.png" width="1000"></div>
+<div align="center"><img src="img/Register-Page3.png" width="1000"></div>
 
 ## :clap: And it's done!
 For questions or comments, you can contact me via this e-mail :email: bertuginal@yahoo.com
