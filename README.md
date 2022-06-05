@@ -1,6 +1,6 @@
 # Monovi Incudemy Register Page
 ## Incudemy Training Site Front-End and Back-End Software Development
-It is the user registration page of a training site that I started and developed during my internship at Monovi Information Technologies.
+It is the user registration page of a Incudemy training site that I started and developed during my internship at Monovi Information Technologies.
 I stored user information using MSSQL and MySQL technologies and I pulled information such as university, department, class from the database.
 I created the interface of the user registration page using Asp.Net MVC and C# technology, HTML, CSS, JAVASCRİPT information.
 
