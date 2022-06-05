@@ -22,7 +22,7 @@ You can reach the user registration page I made by clicking [here](http://incude
 
 ## 🚀 Installation
 
-You can download this project and open the sln file.
+Clone the repo, download this project and open the sln file.
 
 ```bash
 git clone https://github.com/bertuginal/Incudemy-project
@@ -30,7 +30,9 @@ git clone https://github.com/bertuginal/Incudemy-project
 
 ## :point_down: Images
 
-<div align="center"><img src="https://github.com/bertuginal/Face-Mask-Detection/blob/09241e369c708898dd197a3ede1c9592183ca614/img/withmask.jpg" width="700"></div>
+<div align="center"><img src="img/Register-Page1.png" width="700"></div>
+<div align="center"><img src="img/Register-Page2.png" width="700"></div>
+<div align="center"><img src="img/Register-Page3.png" width="700"></div>
 
 ## :clap: And it's done!
 For questions or comments, you can contact me via this e-mail :email: bertuginal@yahoo.com
