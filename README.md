@@ -1,4 +1,4 @@
-# Incudemy Project
+# Monovi Incudemy Register Page
 ## Incudemy Training Site Front-End and Back-End Software Development
 * The Incudemy project is an educational website that I started and developed during my internship at Monovi Information Technologies.
 * You can register on this site as an Instructor or a student (Incudemist), receive training or give training.
