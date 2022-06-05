@@ -12,7 +12,7 @@ This training site will include;
 ---
 
 ## :file_folder: Register Page
-You can reach the user registration page I made by clicking [here](http://incudemy.monovi.com.tr/Auth/UserAdd)
+You can reach the user registration page I made by clicking [here](http://incudemy.monovi.com.tr/Auth/UserAdd).
 
 ## :warning: Technologies used
 
