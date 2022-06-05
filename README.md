@@ -5,7 +5,7 @@ I stored user information using MSSQL and MySQL technologies and I pulled inform
 I created the interface of the user registration page using Asp.Net MVC and C# technology, HTML, CSS, JAVASCRİPT information.
 
 This training site will include;
-* You can register on this site as an Instructor or a student (Incudemist), receive training or give training.
+* You can register on this site as an Instructor (Teacher) or a Incudemist (Student), receive training or give training.
 * Users registered as Instructors (Teachers) will be able to open tutorials, create surveys, take quizzes and issue certificates to incudemists.
 * The Incudemist (Student), on the other hand, will be able to receive training, participate in exams and surveys, send feedback and obtain a certificate if requested.
 
