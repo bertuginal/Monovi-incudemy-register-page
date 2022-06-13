@@ -47,4 +47,4 @@ git clone https://github.com/bertuginal/Incudemy-project
 ## :clap: And it's done!
 For questions or comments, you can contact me via this e-mail :email: bertuginal@yahoo.com
 
-:star: If you like my project, can you click the star to support me?
+:star: <b>If you like my project, can you click the star to support me?</b>
