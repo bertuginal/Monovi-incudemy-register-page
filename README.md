@@ -1,4 +1,14 @@
 # Monovi Incudemy Register Page
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![Asp.Net MVC](https://img.shields.io/badge/Asp.Net-MVC-red.svg)
+![MySQL](https://img.shields.io/badge/MySQL-v8.0.28+-red.svg)
+[![Forks](https://img.shields.io/github/forks/bertuginal/Carboon-Rent-a-Car.svg?logo=github)](https://github.com/bertuginal/Carboon-Rent-a-Car/network/members)
+[![Stargazers](https://img.shields.io/github/stars/bertuginal/Carboon-Rent-a-Car.svg?logo=github)](https://github.com/bertuginal/Carboon-Rent-a-Car/stargazers)
+
+
+---
+
 ## Incudemy Training Site Front-End and Back-End Software Development
 It is the user registration page of a Incudemy training site that I started and developed during my internship at Monovi Information Technologies.
 I stored user information using MSSQL and MySQL technologies and I pulled information such as university, department, class from the database.
@@ -36,3 +46,5 @@ git clone https://github.com/bertuginal/Incudemy-project
 
 ## :clap: And it's done!
 For questions or comments, you can contact me via this e-mail :email: bertuginal@yahoo.com
+
+:star: If you like my project, can you click the star to support me?
